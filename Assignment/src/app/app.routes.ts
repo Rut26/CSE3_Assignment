@@ -1,3 +1,6 @@
 import { Routes } from '@angular/router';
-
-export const routes: Routes = [];
+import { HomeComponentComponent } from './home-component/home-component.component';
+export const routes: Routes = [
+    {path: '', redirectTo: 'home', pathMatch: 'full'},
+    {path:"home", component: HomeComponentComponent},
+];
